@@ -2,8 +2,8 @@
 
 HPS <- function(data){
   
-  shape=0.064438847 # shape from the Gompertz model with age and 86 selected proteins   
-  rate=0.002104934 # rate from the Gompertz model with age and 86 selected proteins
+  shape=0.064438847 # shape from the Gompertz model with age and 86 proteins selected by a LASSO Cox regression model for ending healthspan
+  rate=0.002104934 # rate from the Gompertz model with age and 86 proteins selected by a LASSO Cox regression model for ending healthspan
   
   # age and 86 proteins to calculate the HPS
   predictors=c("age","ace2","adgrg1","adgrg2","ager","alpp","areg","art3","baiap2","bcan","c7",
@@ -39,8 +39,8 @@ HPS <- function(data){
                      -0.097248981, 0.064176978, 0.058214552, 0.129833115,
                      0.014330515, -0.109778897, 0.071909539, -0.026824116,
                      -0.071788442, 0.02497625, 0.130022478) 
-  colnames(data) <- tolower(colnames(data)) # convert column names of the data to lowercase only
-  data <- data[,which(colnames(data)%in%predictors)] # keep predictors columns only in the data
+  colnames(data) <- tolower(colnames(data)) # convert column names of the data to lowercase
+  data <- data[,which(colnames(data)%in%predictors)] # keep predictors only in the data
   if(sum(!predictors%in%colnames(data))==0){
   
   betas=betas[match(colnames(data), predictors)]
@@ -49,10 +49,10 @@ HPS <- function(data){
   b_x <- as.matrix(data)%*%as.matrix(betas)
   rate_new <- rate*exp(b_x)
   
-  # 10-year mortality risk 
+  # 10-year risk of ending healthspan 
   cdf_10_year=1-exp(-(rate_new/shape)*(exp(shape*10)-1))
   
-  # Healthspan proteomic score
+  # healthspan proteomic score
   hps=1-cdf_10_year
   colnames(hps) <- "HPS"
   return(hps)
