@@ -42,7 +42,8 @@ HPS <- function(data){
   colnames(data) <- tolower(colnames(data)) # convert column names of the data to lowercase
   data <- data[,which(colnames(data)%in%predictors)] # keep predictors only in the data
   if(sum(!predictors%in%colnames(data))==0){
-  
+    
+   # match the variable names in "predictors" and the input data
   betas=betas[match(colnames(data), predictors)]
   
   # b(x)=b*exp(x*beta)
