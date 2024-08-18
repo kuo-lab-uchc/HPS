@@ -56,5 +56,7 @@ HPS <- function(data){
   hps=1-cdf_10_year
   colnames(hps) <- "HPS"
   return(hps)
+  }else{  
+    cat("Missing predictors:\n",predictors[which(!predictors%in%colnames(data))])
   }
 }
