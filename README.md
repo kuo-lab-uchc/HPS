@@ -1,4 +1,5 @@
 ## Preprint
+Kuo CL, Liu P, Chen Z, Pilling LC, Atkins JL, Fortinsky RH, Kuchel GA, Diniz BS. A proteomic signature of healthspan. medRxiv [Preprint]. 2024 Jun 26:2024.06.26.24309530. doi: 10.1101/2024.06.26.24309530. PMID: 38978645; PMCID: PMC11230312.
 
 # Healthspan definition
 We defined healthspan as the number of years from birth without a major chronic medical condition, including cancer (excluding non-melanoma skin cancer), diabetes (type I diabetes, type II diabetes, and malnutrition-related diabetes), heart failure, myocardial infarction (MI), stroke, chronic obstructive pulmonary disease (COPD), dementia, or death.
