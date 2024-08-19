@@ -1,8 +1,7 @@
 ## Preprint
 Kuo CL, Liu P, Chen Z, Pilling LC, Atkins JL, Fortinsky RH, Kuchel GA, Diniz BS. A proteomic signature of healthspan. medRxiv [Preprint]. 2024 Jun 26:2024.06.26.24309530. doi: 10.1101/2024.06.26.24309530. PMID: 38978645; PMCID: PMC11230312.
 
-# Healthspan definition
-We defined healthspan as the number of years from birth without a major chronic medical condition, including cancer (excluding non-melanoma skin cancer), diabetes (type I diabetes, type II diabetes, and malnutrition-related diabetes), heart failure, myocardial infarction (MI), stroke, chronic obstructive pulmonary disease (COPD), dementia, or death.
+We developed a proteomics-based signature of healthspan (healthspan proteomic score (HPS)) using data from the UK Biobank Pharma Proteomics Project (53,018 individuals and 2920 proteins). In line with previous studies, we defined healthspan as the number of years from birth without a major chronic medical condition, including cancer (excluding non-melanoma skin cancer), diabetes (type I diabetes, type II diabetes, and malnutrition-related diabetes), heart failure, myocardial infarction (MI), stroke, chronic obstructive pulmonary disease (COPD), dementia, or death. Our findings demonstrate the validity of HPS, making it a valuable tool for assessing healthspan and as a potential surrogate marker in geroscience-guided studies.
 
 ## Setup
 Users are required to download and install R but no R package is needed to calculate the healthspan proteomic score (HPS).
