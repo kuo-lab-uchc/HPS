@@ -9,7 +9,7 @@ We developed a proteomics-based signature of healthspan (healthspan proteomic sc
 Users are required to download and install R but no R package is needed to calculate the healthspan proteomic score (HPS).
 
 ## Input file
-The input file, as shown in "hps_example_data.csv", should have the first column designated as the ID column, with any arbitrary column name. This should be followed by columns containing age and the required proteins. The input file may include additional proteins beyond those needed, and the protein column names will be converted to lowercase by the R code "HPS.R".
+The input file, as shown in "hps_example_data.csv", should have the first column designated as the ID column, with any arbitrary column name. This should be followed by columns containing age and the required proteins. The input file may include additional proteins beyond those needed, and the protein column names will be converted to lowercase.
 
 ## Example
 The R code below shows you how to load the "HPS" function in "HPS.R" to calculate healthspan proteomic scores for five subjects with input data in "hps_example_data.csv".
